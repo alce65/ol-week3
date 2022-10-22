@@ -3,11 +3,19 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "scripts": {},
+    "scripts": {
+        "start": "",
+        "test": "",
+        "sass": "sass scss:css -w"
+    },
     "keywords": [],
     "author": "Alejandro Cerezo",
     "license": "ISC",
     "prettier": {
         "singleQuote": true
+    },
+    "dependencies": {
+        "bootstrap": "^5.2.2",
+        "sass": "^1.55.0"
     }
 }
