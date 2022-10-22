@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    /* Al definir tamaños (width) incluyes borde - padding - content */
+}
+
+body {
+    margin: 0;
+}
+
+section.first {
+    font-size: 0;
+}
+
+header {
+    position: sticky;
+    top: 0rem;
+    background-color: brown;
+    color: bisque;
+}
+
+div {
+    display: inline-block;
+}
+div.first {
+    width: 55%;
+    padding: 2.5rem;
+    border: 2px solid gainsboro;
+    margin-right: 5%;
+}
+div.second {
+    width: 35%;
+    height: 1rem;
+    background-color: bisque;
+    margin-left: 5%;
+}
+
+section.second {
+    padding: 1rem;
+    position: relative;
+}
+
+p:nth-of-type(2) {
+    position: absolute;
+    top: 1rem;
+    background-color: azure;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    background-color: bisque;
+    bottom: 0;
+}
+
+p.foo {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 1rem;
+}
+
+p.bar {
+    display: none;
+}
+
+.menu a {
+    color: inherit;
+}
+
+@media screen and (min-width: 600px) {
+    p.foo {
+        margin-block-start: 2rem;
+        margin-block-end: 2rem;
+        margin-inline-start: 2.5rem;
+        margin-inline-end: 2rem;
+        display: none;
+    }
+    p.bar {
+        display: initial;
+    }
+    footer {
+    }
+}
+
+@media screen and (min-width: 680px) {
+    footer {
+    }
+}
+
+:target {
+}
